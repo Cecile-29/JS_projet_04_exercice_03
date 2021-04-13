@@ -19,10 +19,22 @@
         <p class="p-2" id="clickCounter">0</p>
         <p class="p-2"> fois !</p>
       </div>
+      <!-- Correction Louiza et Olga -->
+      <!-- <div class="container-fluid justify-content-center col-12 row">
+      <form class="align-content-center" id="form01">
+        <input class="col-12 justify-content-center bt-outline rounded p-2 mb-4" id="numberOfClicks" type="button">
+        <button class="col-12 bt-outline justify-content-center rounded p-2 mb-4" type="button" name="button" onclick="displayNumberOfClicks()">Cliquez ici !</button>
+        <button class="bt-outline  justify-content-center rounded p-2 mb-4" type="button" name="button" onclick="resetForm()">Revenez aux valeurs par défaut !</button>
+      </form>
+    </div> -->
+
     </div>
   </div>
+  <!-- *********** Correction Louiza, Olga, JP, et function avec modale ***************-->
+  <!-- <script src="app.js"></script> -->
+
   <script type="text/javascript">
-  /* ici est crée deux variables, la première avec la méthode getElementById
+    /* ici est crée deux variables, la première avec la méthode getElementById
    récupére l'"ID" du bouton "AJOUT CLIC!" dont on va écouter le nombre ensuite,
    avec le gestionnaire d'éléments addEventListener, on affecte la valeur de zéro
    à la deuxième pour débuter l'incrémentation du nombres de click au début de
@@ -32,18 +44,17 @@
     /* Dans le gestionnaire d'éléments addEventListener on imbrique une fonction
     où l'opération est d'incrémenter la variable scoreOfClick à chaque "event" ici
     le click de la souris sur le bouton*/
-    timesOfClick.addEventListener('click', function()
-    {
-      /* dans la fonction on incrémente la variable scoreOfClick
-      ceci peut aussi se coder comme cela : scoreOfClick++; */
-      scoreOfClick = scoreOfClick + 1;
-      /*ici la propriété .innerHTML renverra une chaine de caractères modifié
-      de la deuxiéme balise <p></p> du code html.*/
-      document.getElementById('clickCounter').innerHTML = scoreOfClick;
-    }
-    /*fin de l'écoute par le gestionnaire d'événemnts où est imbriquée la fonction
-    du calcul de clicks*/
-  );
+    timesOfClick.addEventListener('click', function() {
+        /* dans la fonction on incrémente la variable scoreOfClick
+        ceci peut aussi se coder comme cela : scoreOfClick++; */
+        scoreOfClick = scoreOfClick + 1;
+        /*ici la propriété .innerHTML renverra une chaine de caractères modifié
+        de la deuxiéme balise <p></p> du code html.*/
+        document.getElementById('clickCounter').innerHTML = scoreOfClick;
+      }
+      /*fin de l'écoute par le gestionnaire d'événemnts où est imbriquée la fonction
+      du calcul de clicks*/
+    );
   </script>
 </body>
 
